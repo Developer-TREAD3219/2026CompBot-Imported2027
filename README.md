@@ -31,5 +31,5 @@ Steps used to import 2026 project into 2027 for conversion to Systemcore from ro
     g. Relative encoders used with SparkMax need to add .Get() to .GetPosition()
       For example, climberEncoder.getPosition().get()
     h. Lots of changes to DriveSubsystem for swerve.  E.g. SwerveModuleState renamed to SwerveModuleVelocity, .getState() gone.
-    i. Subsystems no longer extend SubsystemBase, now extend Mechanism (import org.wpilib.command3.Mechanism;)
+    i. Commands no longer extend Command, now extend Mechanism (import org.wpilib.command3.Mechanism;)
 
