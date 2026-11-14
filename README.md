@@ -19,7 +19,9 @@ Steps used to import 2026 project into 2027 for conversion to Systemcore from ro
 9. Verify Java version is 25 or higher. (type "java -version" in Terminal window
 10. Add libraries for:
     - sendableChooser replaced by Selectable from org.wpilib.tunable.util.*    requires >= Elastic alpha 9
-    - SmartDashboard replace with Network Tables for putData, putBoolean, putNumber, putString (create class and method to call)
+    - SmartDashboard replace with Network Tables for putData, putBoolean, putNumber, putString (create class and method to call?)
+    -    can use Telemetry.Log("my data", myData); if only displaying. (org.wpilib.telemetry.Telemetry)
+    -    if need to retrieve data, use Tunable instead of Telemetry (org.wpilib.tunable.util.*)
 
 changes:
 - remove robotInit() from Robot.java
